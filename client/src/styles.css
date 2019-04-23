@@ -1,0 +1,53 @@
+/* Application-wide Styles
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+
+h2,
+h3 {
+  color: #444;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+}
+
+body {
+  margin: 2em;
+}
+
+body,
+input[type="text"],
+button,
+select,
+textarea,
+.button {
+  color: #888;
+  font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button,
+.button {
+  text-transform: uppercase;
+  padding: .5em 1em;
+  cursor: default;
+}
+
+
+.button {
+  text-decoration: none;
+  background-color: #EEEEEE;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+
+textarea {
+    width: 30em;
+}
+
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+} */

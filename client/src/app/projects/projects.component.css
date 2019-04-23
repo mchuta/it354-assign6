@@ -1,0 +1,30 @@
+/* ul {
+    padding: 0;
+    display: inline-block;
+}
+
+li {
+    list-style-type: none;
+    height: 2.5em;
+}
+
+li:hover {
+    padding-left: .1em;
+}
+
+li label {
+    padding: .5em;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+}
+
+li span {
+    padding: .5em;
+    color: blue;
+    background-color: lightskyblue;
+    width: 20em;
+    display: inline-block;
+    cursor: pointer;
+}
+ */

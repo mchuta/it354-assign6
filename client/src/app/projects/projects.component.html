@@ -1,0 +1,24 @@
+<h2 class="text-muted">Project List</h2>
+
+<ul class="list-group" *ngIf="projects">
+  <a routerLink="/projects/{{project.id}}" *ngFor="let project of projects"
+    class="list-group-item list-group-item-action">
+    <div class="input-group">
+      <div class="input-group-prepend mr-2">
+        <span class="input-group-text text-light" 
+          [class.bg-success]="project.project_status === 'Completed'"
+          [class.bg-info]="project.project_status === 'New'"
+          [class.bg-dark]="project.project_status === ''"
+          [class.bg-primary]="project.project_status === 'In Progress'"
+          [class.bg-danger]="project.project_status === 'On Hold'"
+          id="inputGroup-sizing-sm">
+          {{project.id}}
+        </span>
+      </div>
+      <span class="mt-2">{{ project.project_name}}</span>
+    </div>
+  </a>
+</ul>
+<p class="mt-4">
+  <button class="btn btn-primary" (click)="new()">New Project</button>
+</p>

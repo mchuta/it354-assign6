@@ -1,0 +1,12 @@
+<h2 class="text-muted">Messages</h2>
+<div *ngIf="messengerService.messages.length">
+  <div class="list-group">
+    <div class="list-group-item" *ngFor="let message of messengerService.messages">
+      {{message}}
+    </div>
+  </div>
+  <button class="offset-11 btn btn-outline-danger mt-2" (click)="messengerService.clear()">Clear</button>
+</div>
+<div *ngIf="!messengerService.messages.length">
+  <span class="text-muted">No messages to display</span>
+</div>
