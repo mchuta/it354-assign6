@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Project } from '../project';
 import { ProjectService } from '../project.service';
-import { MessengerService } from '../messenger.service';
 import { Router } from '@angular/router';
 
 
@@ -16,8 +15,7 @@ export class ProjectsComponent implements OnInit {
 
   constructor(
     private projectService: ProjectService,
-    private messengerService: MessengerService,
-    private router: Router 
+    private router: Router
   ) { }
 
   ngOnInit() {

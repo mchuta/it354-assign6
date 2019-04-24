@@ -5,7 +5,7 @@
       {{message}}
     </div>
   </div>
-  <button class="offset-11 btn btn-outline-danger mt-2" (click)="messengerService.clear()">Clear</button>
+  <button class="offset-11 btn btn-outline-danger mt-2 float-right" (click)="messengerService.clear()">Clear</button>
 </div>
 <div *ngIf="!messengerService.messages.length">
   <span class="text-muted">No messages to display</span>

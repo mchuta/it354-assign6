@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { Project } from '../project';
 import { ProjectService } from '../project.service';
-import { MessengerService } from '../messenger.service';
 import { ProjectStatusService } from '../project-status.service'
 import { Location } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-project-create',
@@ -23,8 +23,8 @@ export class ProjectCreateComponent implements OnInit {
 
   constructor(
     private projectService: ProjectService,
-    private messengerService: MessengerService,
     private location: Location,
+    private router: Router,
     public projectStatusService: ProjectStatusService
   ) { }
 
@@ -43,8 +43,8 @@ export class ProjectCreateComponent implements OnInit {
     this.project.date_created = new Date();
 
     this.projectService.createProject(this.project)
-      .subscribe(() => 
-        this.goBack()
+      .subscribe(() =>
+        this.router.navigateByUrl('')
       );
   }
 

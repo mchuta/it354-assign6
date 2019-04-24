@@ -1,11 +1,12 @@
-<h2 class="text-muted">Project List</h2>
+<h2 class="text-muted pb-4">Project List</h2>
 
 <ul class="list-group" *ngIf="projects">
   <a routerLink="/projects/{{project.id}}" *ngFor="let project of projects"
     class="list-group-item list-group-item-action">
     <div class="input-group">
       <div class="input-group-prepend mr-2">
-        <span class="input-group-text text-light" 
+        <span class="input-group-text text-light" title="{{project.project_status || 'None'}}"
+          data-toggle="tooltip" data-placement="left"
           [class.bg-success]="project.project_status === 'Completed'"
           [class.bg-info]="project.project_status === 'New'"
           [class.bg-dark]="project.project_status === ''"

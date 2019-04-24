@@ -42,7 +42,8 @@ class Api extends REST_Controller
             'project_user_id' => $this->post('project_user_id'),
             'project_name' => $this->post('project_name'),
             'project_body' => $this->post('project_body'),
-            'date_created' => $this->post('date_created')
+            'date_created' => $this->post('date_created'),
+            'project_status' => $this->post('project_status')
         ];
 
         $project = $this->project_model->create_project($data);
